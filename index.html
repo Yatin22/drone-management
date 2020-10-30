@@ -7,17 +7,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body{
-  background-image: url('https://images.unsplash.com/photo-1508444845599-5c89863b1c44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80');
+  background-image: url('https://wallpapercave.com/wp/wp1896545.jpg');
   background-repeat: no-repeat;
 }
 .div2 {
-  width: 150px;
-  height: 250px;
+  width: 250px;
+  height: 400px;
   float: right;
   padding: 50px;
   border: 8px solid black;
   box-sizing: border-box;
 }
+.div3 {
+  width: 250px;
+  height: 400px;
+  float: right;
+  padding: 50px;
+  border: 8px solid black;
+  box-sizing: border-box;}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -25,7 +33,6 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
@@ -84,7 +91,7 @@ section:after {
 footer {
   background-color: #777;
   padding: 10px;
-  text-align: center;
+  text-align: center down;
   color: white;
 }
 
@@ -96,13 +103,14 @@ footer {
   }
 }
 .city {
-  float: center;
+  Float:center;
   background-color: tomato;
   color: white;
   border: 2px solid black;
   margin: 20px;
-  text-align: left;
-  width: 475px;
+  text-align:left;
+  width: 700px;
+  height: 400px;
   padding: 30px;
 }
 </style>
@@ -123,12 +131,28 @@ footer {
 <table>
 <tr>
 <td>
-  <div class="div2" style="background-color:black;color:white;padding:20px;">Hooray!</div>
-  <div class="city">
+  
+  <div class="city" position:relative;'>
+  <span style='position:absolute; bottom:0px;'>
 <h2>London</h2>
 <p>London is the capital of England.</p>
+</span>
 </div> 
+</td>
+<td>
 
+
+<div class="div2" style="background-color:#495464;color:white;padding:20px;">Details</div></td>
+<td><div class="div3" style="background-color:#495464;color:white;padding:20px;">Hooray!</div></td>
+</tr>
+</table>
+<table>
+<tr>
+<td style="width:790px;height:400px;"> </td>
+<td>
+<div class="div3" style="background-color:#495464;color:white;padding:20px;float:right;">Details</div>
+</td>
+<td><div class="div3" style="background-color:#495464;color:white;padding:20px;float:right;">Hooray!</div>
 </td>
 </tr>
 </table>
